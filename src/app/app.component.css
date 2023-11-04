@@ -405,7 +405,7 @@ nav ul li {
   flex-direction: column;  
   position: fixed;  
   right: 20px; /* Adjust the right positioning as needed */  
-  bottom: 20%; /* Adjust the bottom positioning as needed */  
+  bottom: 70%; /* Adjust the bottom positioning as needed */  
 }  
   
 .socials a {  

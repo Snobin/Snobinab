@@ -90,6 +90,17 @@ export class AppComponent {
   openResume() {
     window.open('./assets/resources/resume.pdf');
   }
+  senderName: any;
+  senderEmail:any;
+  message: any;
+
+  onSubmit() {
+    // Here, you can access this.senderName, this.senderEmail, and this.message
+    // and do something with the message.
+    console.log('Name:', this.senderName);
+    console.log('Email:', this.senderEmail);
+    console.log('Message:', this.message);
+  }
 
 }
 

@@ -96,10 +96,10 @@
                     <p class="tech-stack">Technical Stack:</p>
                     <ul>
                         <li>React Native</li>
-                        <li>Flutter</li>
+                        <li>Firebase</li>
                     </ul>
                     <p class="project-description">
-                        React Native mobile application for campus applications. Technical stacks include React Native and Flutter.
+                        React Native mobile application for campus applications which incorporates college functionalities.
                     </p>
                 </div>
                 <a href="#" target="_blank" class="project-link">Check it Out</a>
@@ -139,34 +139,34 @@
         </div>
     </section>
     <section class="contact" id="contact">
-        <h2>Get In Touch With Me</h2>
-        <div class="contact-form-container">
-            <div class="contact-form">
-                <form action="" method="POST" class="form-group">
-                    <div class="form-control">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name"
-                            class="input-field" required />
-                    </div>
-                    <div class="form-control">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="sender-email" placeholder="Enter Your Email"
-                            class="input-field" required />
-                    </div>
-                    <div class="form-control">
-                        <label for="message">Message</label>
-                        <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
-                            class="input-field" required></textarea>
-                    </div>
-                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
-                </form>
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form (submit)="onSubmit()" class="form-group">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="sender-name" placeholder="Enter Your Name"
+                class="input-field" required [(ngModel)]="senderName" />
             </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="sender-email" placeholder="Enter Your Email"
+                class="input-field" required [(ngModel)]="senderEmail" />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
+                class="input-field" required [(ngModel)]="message"></textarea>
+            </div>
+            <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
+          </form>
         </div>
+      </div>
     </section>
-
+    
     <div class="socials">
-        <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="#" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/snobinabraham/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Snobin" target="_blank"><i class="fab fa-github"></i></a>
     </div>
 
     <footer>
