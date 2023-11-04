@@ -87,6 +87,9 @@ export class AppComponent {
       this.ul?.classList.remove("show");
     }
   }
+  openResume() {
+    window.open('./assets/resources/resume.pdf');
+  }
 
 }
 
