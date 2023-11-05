@@ -12,13 +12,27 @@
 <body>
     <nav>
         <h1>Snobin Abraham</h1>
+    
+      <li style="list-style:none" > 
+        <a href="https://www.linkedin.com/in/snobinabraham/" target="_blank">
+            <i class="fab fa-linkedin" style="font-size: 22px;"></i>
+        </a>
+    </li>
+    <li style="list-style:none " >
+        <a href="https://github.com/Snobin" target="_blank">
+            <i class="fab fa-github" style="font-size: 22px;"></i>
+        </a>
+    </li>
+    
         <ul class="navigation" [ngClass]="{ 'menu-open': isMenuOpen }" >
             <li><a (click)="hideMenu(); scrollToSection('firstspace')" class="nav-link" >About</a></li>
             <li><a (click)="hideMenu(); scrollToSection('secondspace')" class="nav-link" >Skills</a></li>
             <li><a (click)="hideMenu(); scrollToSection('thirdspace')" class="nav-link">Projects</a></li>
             <li><a (click)="hideMenu(); scrollToSection('contact')" class="nav-link">Contact</a></li>
             
-        </ul>
+       
+      
+  </ul>
         <button class="burger-menu" id="burger-menu">
             <i class="fas fa-bars"></i>
         </button>
@@ -173,10 +187,7 @@
       </div>
     </section>
     
-    <div class="socials">
-        <a href="https://www.linkedin.com/in/snobinabraham/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Snobin" target="_blank"><i class="fab fa-github"></i></a>
-    </div>
+ 
 
     <footer>
         <p class="copy">&copy; Copyright 2023 Snobin Abraham</p>
